@@ -2,6 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.3.41"
+    id("com.diffplug.gradle.spotless") version "3.25.0"
 }
 
 group = "com.uzhnu.epam.course"
@@ -29,4 +30,10 @@ tasks.withType<Test> {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
+}
+
+spotless {
+    kotlin {
+        ktlint("0.35.0")
+    }
 }
