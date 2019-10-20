@@ -1,9 +1,9 @@
 package com.uzhnu.epam.course.week3
 
-import org.spekframework.spek2.Spek
-import org.spekframework.spek2.style.specification.describe
 import kotlin.test.assertEquals
 import kotlin.test.assertNotEquals
+import org.spekframework.spek2.Spek
+import org.spekframework.spek2.style.specification.describe
 
 object DeckTest : Spek({
     describe("order") {

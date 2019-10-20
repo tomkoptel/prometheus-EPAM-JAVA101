@@ -1,9 +1,9 @@
 package com.uzhnu.epam.course.week4
 
+import java.util.Arrays
+import kotlin.test.assertTrue
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe
-import java.util.*
-import kotlin.test.assertTrue
 
 object SortTest : Spek({
     describe("compute") {

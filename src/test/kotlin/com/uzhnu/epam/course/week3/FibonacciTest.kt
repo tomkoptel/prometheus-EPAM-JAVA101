@@ -1,8 +1,8 @@
 package com.uzhnu.epam.course.week3
 
+import kotlin.test.assertTrue
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe
-import kotlin.test.assertTrue
 
 object FibonacciTest : Spek({
     val fib by memoized { Fibonacci() }
@@ -47,6 +47,5 @@ object FibonacciTest : Spek({
         it("7 -> 13") {
             assertTrue { fib.getNumber(7) == 13L }
         }
-
     }
 })

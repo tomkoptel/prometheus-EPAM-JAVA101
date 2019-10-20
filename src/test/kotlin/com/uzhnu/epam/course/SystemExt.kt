@@ -1,8 +1,8 @@
 package com.uzhnu.epam.course
 
-import java.io.PrintStream
 import java.io.ByteArrayOutputStream
 import java.io.OutputStream
+import java.io.PrintStream
 
 fun captureSystemOut(test: (OutputStream) -> Unit) {
     val outContent = ByteArrayOutputStream()

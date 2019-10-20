@@ -16,7 +16,7 @@ object RLEApplicationEncodeTest : Spek({
             "Hoooo" to "Ho4",
             "dddffffr" to "d3f4r"
         ).forEach { (inKey, outKey) ->
-            it ("maps '$inKey' -> '$outKey'") {
+            it("maps '$inKey' -> '$outKey'") {
                 captureSystemOut {
                     RLEApplicationEncode.main(arrayOf(inKey))
                     it.toString() shouldEqual "$outKey\n"
