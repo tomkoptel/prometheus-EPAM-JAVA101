@@ -9,6 +9,7 @@ group = "com.uzhnu.epam.course"
 version = "1.0-SNAPSHOT"
 
 repositories {
+    jcenter()
     mavenCentral()
 }
 
@@ -20,6 +21,8 @@ dependencies {
     testImplementation(kotlin("test"))
     testImplementation("org.spekframework.spek2:spek-dsl-jvm:$spek_version")
     testRuntimeOnly("org.spekframework.spek2:spek-runner-junit5:$spek_version")
+
+    testImplementation("org.amshove.kluent:kluent:1.56")
 }
 
 tasks.withType<Test> {
