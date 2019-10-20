@@ -22,7 +22,9 @@ dependencies {
     testImplementation("org.spekframework.spek2:spek-dsl-jvm:$spek_version")
     testRuntimeOnly("org.spekframework.spek2:spek-runner-junit5:$spek_version")
 
-    testImplementation("org.amshove.kluent:kluent:1.56")
+    testImplementation("org.amshove.kluent:kluent:1.56") {
+        exclude(group = "com.nhaarman.mockitokotlin2")
+    }
 }
 
 tasks.withType<Test> {
